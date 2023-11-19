@@ -6,7 +6,7 @@
 
 body {
     font-family: 'roboto', sans-serif;
-    
+    font-size: 62.5%;
 }
 
 header {
@@ -52,7 +52,7 @@ header {
 .navigation a {
     text-decoration: none;
     color: #333;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .hammie {
@@ -98,7 +98,7 @@ header {
 
 .hero-text p {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin: 20px 0; 
 }
 
@@ -110,9 +110,76 @@ header {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .cta-button:hover {
     background-color: #d4af37;
+}
+.vision-mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 667px; /*based on the iphone*/
+    width: 375px;
+    margin: 0 auto; 
+    background-color: #d3b05e;
+    color:#2c2c2c;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.vision-mission h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.vision-mission p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.services {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c2c2c;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'playfair display';
+    color: #d3b05e;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.service-item p {
+    margin-top: 10px;
+    font-size: 0.8rem;
 }
