@@ -1,82 +1,348 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'roboto', sans-serif;
-    font-size: 62.5%;
+  font-family: "roboto", sans-serif;
+  font-size: 62.5%;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2c2c2c;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 10px 20px;
 }
 
 .logo img {
-    width: 85px;
-    height: auto;
+  width: 85px;
+  height: auto;
 }
 
-.hammie img  {
-    width: 20px;
-    height: auto;
+.hammie img {
+  width: 20px;
+  height: auto;
 }
 
 .navigation {
-    display: none;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: #f2f5f7;
-    position: absolute;
-    width: 40%;
-    right: 0px;
-    padding-right: 10px;
-    margin-left: 10px;
-    z-index: 10;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #f2f5f7;
+  position: absolute;
+  width: 40%;
+  right: 0px;
+  padding-right: 10px;
+  margin-left: 10px;
+  z-index: 10;
 }
 
 .navigation.show-items {
-    display: flex;
+  display: flex;
 }
 
 .navigation li {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .navigation a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
 }
 
 .hammie {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*hero section coding*/
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  margin-top: 175px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.hero-text p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: goldenrod;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.cta-button:hover {
+  background-color: #d4af37;
+}
+/*vision and mission*/
+
+.vision-mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 667px; /*based on the iphone*/
+  width: 375px;
+  margin: 0 auto;
+  background-color: #d3b05e;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.vision-mission h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.vision-mission p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/*services*/
+
+.services {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c2c2c;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Playfair display";
+  color: #d3b05e;
+}
+
+.service-item {
+  background-color: #f4f4f4;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.service-item p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.testimonials {
+  text-align: center;
+  padding: 20px;
+  background-color: #d3b05e;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Playfair display";
+}
+
+.testimonials h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #2c2c2c;
+}
+
+.testimonials img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.wayne,
+.bateman,
+.prince,
+.harold {
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: #f4f4f4;
+  color: #2c2c2c;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80%;
+}
+footer {
+  background-color: #2c2c2c;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.footer-legal {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+/*desktop styles*/
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-right: 45px;
+  }
+  .hammie {
+    display: none;
+  }
+
+  .navigation li {
+    margin-left: 20px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 10px 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /*trying this for the first time. Looked (and works) quite convenient)*/
+    z-index: -1;
+  }
+
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,334 +350,119 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-}
+  }
 
-
-.hero-text {
-    position: absolute;
-    margin-top: 175px;
+  .hero-text {
+    position: relative;
+    margin: 0;
     padding: 50px;
     text-align: center;
     color: white;
     z-index: 10;
-}
-
-.hero-text p {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin: 20px 0; 
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: goldenrod;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.cta-button:hover {
-    background-color: #d4af37;
-}
-/*vision and mission*/
-
-.vision-mission {
+    flex: none;
+  }
+  .hero-text p {
+    font-size: 3rem;
+  }
+  .vision-mission {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 667px; /*based on the iphone*/
-    width: 375px;
-    margin: 0 auto; 
+    width: 100%;
+    margin: 0 auto;
     background-color: #d3b05e;
-    color:#2c2c2c;
-    font-family: 'Roboto', sans-serif;
+    color: #2c2c2c;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-}
+  }
 
-.vision-mission h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-family: 'Playfair Display', serif;
-}
+  .vision-mission h2 {
+    font-size: 4rem;
+    margin-bottom: 60px;
+    font-family: "Playfair Display", serif;
+  }
 
-.vision-mission p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
+  .vision-mission p {
+    font-size: 1.6rem;
+    line-height: 2.2;
+  }
 
-/*services*/
+  /*using grid for services*/
 
-.services {
-    text-align: center;
-    padding: 20px;
-    background-color: #2c2c2c;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-.services h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: 'Playfair display';
-    color: #d3b05e;
-}
-
-.service-item {
-    background-color: #f4f4f4;
-    color: #2c2c2c;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.service-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-}
-
-.service-item h3 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-.service-item p {
-    margin-top: 10px;
-    font-size: 0.8rem;
-}
-.testimonials {
-    text-align: center;
-    padding: 20px;
-    background-color: #d3b05e;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family:'Playfair display';
-}
-
-.testimonials h3 {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    color: #2c2c2c;
-}
-
-.testimonials img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 10px auto;
-}
-
-.wayne, .bateman, .prince, .harold {
-    font-size: 1em;
-    line-height: 1.4;
-    background-color: #f4f4f4;
-    color: #2c2c2c;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px auto;
-    width: 80%; 
-}
-footer {
-    background-color: #2c2c2c;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
+  .services {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     align-items: center;
-}
+    overflow: auto;
+  }
 
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
-}
+  .service-item {
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .services > h2 {
+    grid-column: 1 / -1; /*a shorthand property that I had to go back and forth to address perfectly*/
+  }
 
-.footer-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
+  .service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
 
-.footer-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-.social-media {
-    margin-top: 20px;
-}
+  .testimonials {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: start;
+    overflow: auto;
+    padding: 60px;
+    box-sizing: border-box;
+  }
 
-.social-media a {
-    margin: 10px;
-}
+  .testimonials > h2 {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+  }
 
-.social-media img {
-    width: 30px; 
-    height: 30px;
+  .testimonials div {
+    background-color: #f4f4f4;
+    color: #2c2c2c;
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .testimonials img {
+    width: 100px;
+    height: 100px;
+    object-position: center;
     border-radius: 50%;
-}
+    margin-right: 20px;
+    float: left;
+  }
 
-.footer-legal {
-    margin-top: 20px;
+  .testimonials blockquote {
+    font-style: italic;
+    margin: 0;
+    padding-left: 120px;
+    position: relative;
+    padding-top: 20px;
     font-size: 0.8rem;
-}
-
-/*desktop styles*/
-
-@media screen and (min-width: 1200px) {
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        background: none;
-        width: auto;
-        margin: 0;
-        padding: 0;
-        margin: -42px;
-        padding-right: 45px;
-    }
-    .hammie {
-        display: none;
-    }
-
-    .navigation li {
-        margin-left: 20px;
-        display: inline-block;
-        margin-right: 20px;
-    }
-
-    .navigation a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.4rem;
-        padding: 10px 0;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-    }
-        .logo img {
-        width: 150px; 
-        height: auto; 
-    }
-    
-        .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-    
-        .hero-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            position: absolute;
-            top: 50%; 
-            left: 50%;
-            transform: translate(-50%, -50%); /*trying this for the first time. Looked (and works) quite convenient)*/
-            z-index: -1;
-        }
-    
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-    
-        .hero-text {
-            position: relative; 
-            margin: 0; 
-            padding: 50px;
-            text-align: center;
-            color: white;
-            z-index: 10;
-            flex: none;
-        }
-        .hero-text p {
-            font-size: 3rem;
-        }
-        .vision-mission {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%; 
-            margin: 0 auto; 
-            background-color: #d3b05e;
-            color: #2c2c2c;
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        
-        .vision-mission h2 {
-            font-size: 4rem;
-            margin-bottom: 60px;
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .vision-mission p {
-            font-size: 1.6rem;
-            line-height: 2.2;
-        }
-
-        /*using grid for services*/
-
-        
-            .services {
-                height: 50vh;
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 20px;
-                align-items: center;
-                overflow: auto;
-            }
-
-    .service-item {
-        margin-bottom: 0;
-        position: relative;
-        overflow: hidden;
-    }
-    .services > h2 {
-        grid-column: 1 / -1; /*a shorthand property that I had to go back and forth to address perfectly*/
-    }
-    
-    .service-item img {
-        width: 100%;
-        height: 200px; 
-        object-fit: cover;
-        object-position: center;
-    }
+  }
 }
