@@ -116,6 +116,8 @@ header {
 .cta-button:hover {
     background-color: #d4af37;
 }
+/*vision and mission*/
+
 .vision-mission {
     display: flex;
     flex-direction: column;
@@ -142,6 +144,8 @@ header {
     font-size: 1.2rem;
     line-height: 1.8;
 }
+
+/*services*/
 
 .services {
     text-align: center;
@@ -267,3 +271,95 @@ footer {
     margin-top: 20px;
     font-size: 0.8rem;
 }
+
+/*desktop styles*/
+
+@media screen and (min-width: 1200px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        margin: -42px;
+        padding-right: 45px;
+    }
+    .hammie {
+        display: none;
+    }
+
+    .navigation li {
+        margin-left: 20px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    }
+
+    .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        padding: 10px 0;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+        .logo img {
+        width: 150px; 
+        height: auto; 
+    }
+    
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .hero-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%); /*trying this for the first time. Looked (and works) quite convenient)*/
+            z-index: -1;
+        }
+    
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    
+        .hero-text {
+            position: relative; 
+            margin: 0; 
+            padding: 50px;
+            text-align: center;
+            color: white;
+            z-index: 10;
+            flex: none;
+        }
+        .hero-text p {
+            font-size: 3rem;
+        }
+    
