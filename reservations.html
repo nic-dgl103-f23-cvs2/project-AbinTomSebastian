@@ -35,5 +35,33 @@
             element.classList.toggle("show-items");
         } 
     </script>
+    <!-- Reservation Form Section -->
+    <section class="reservation-form">
+        <h2>Reservation Request</h2>
+        <p>Thank you for choosing Ambassador for your transportation needs in the Comox Valley.</p>
+        <form action="/submit-reservation" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group"> <!--Adding a dropdown-->
+                <label for="service-type">Service Type:</label>
+                <select id="service-type" name="serviceType">
+                    <option value="sedan">Executive Sedan</option>
+                    <option value="suv">Luxury SUV</option>
+                    <option value="limo">Stretch Limousine</option>
+                    <option value="hybrid">Eco-Friendly Hybrid</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="cta-button">Submit Reservation</button>
+            </div>
+        </form>
+    </section>
+
 </body>
 </html>
