@@ -1,122 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Ambassador Transportation</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="images/Logo.png" alt="Ambassador Transportation Corp. Logo">
-            </div>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <div class="hammie">
-                <img src="images/hamburger.svg" alt="menu" onclick="showNav()">
-            </div>
+      <nav>
+        <div class="logo">
+          <img
+            src="images/Logo.png"
+            alt="Ambassador Transportation Corp. Logo"
+          />
         </div>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="hammie">
+          <img src="images/hamburger.svg" alt="menu" onclick="showNav()" />
+        </div>
+      </div>
     </header>
     <!-- script adjusted after reusing from the homepage-->
     <script>
-        function showNav() {
-            var element = document.querySelector(".navigation");
-            element.classList.toggle("show-items");
-        } 
+      function showNav() {
+        var element = document.querySelector(".navigation");
+        element.classList.toggle("show-items");
+      }
     </script>
 
     <section class="contact-main">
-        <h2>Contact Us</h2>
-        <p>Please contact us at <strong>250-339-5252</strong> (LOCAL) or <strong>1-877-339-5252</strong> (OUT OF AREA) to discuss your custom transportation needs.</p>
-        
-        <table class="business-hours">
-            <tr>
-                <th>Day</th>
-                <th>Business Hours</th>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td>CLOSED</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>9:00am to 5:00pm</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>12:00pm to 8:00pm</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>11:00am to 7:00pm</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>9:00am to 5:00pm</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>9:00am to 4:00pm</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>CLOSED</td>
-            </tr>
-        </table>
-        
-        <p>Walk-in clients are welcome, but appointments are recommended.</p>
+      <h2>Contact Us</h2>
+      <p>
+        Please contact us at <strong>250-339-5252</strong> (LOCAL) or
+        <strong>1-877-339-5252</strong> (OUT OF AREA) to discuss your custom
+        transportation needs.
+      </p>
+
+      <table class="business-hours">
+        <tr>
+          <th>Day</th>
+          <th>Business Hours</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>CLOSED</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00am to 5:00pm</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>12:00pm to 8:00pm</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>11:00am to 7:00pm</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00am to 5:00pm</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00am to 4:00pm</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>CLOSED</td>
+        </tr>
+      </table>
+
+      <p>Walk-in clients are welcome, but appointments are recommended.</p>
     </section>
     <section class="location-map">
-        <h2>Find Us</h2>
-        <p>Visit us at our office for a personal consultation. We're located at 2300 Ryan Rd, Courtenay, BC V9N 8N6..</p>
-        
-        <!-- Embedded Google Maps iframe -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d82560.52937564178!2d-125.05365224044908!3d49.71049027341984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x548813c40dbd7447%3A0xd96b1fbbde947996!2s2300%20Ryan%20Rd%2C%20Courtenay%2C%20BC%20V9N%208N6!3m2!1d49.7105195!2d-124.9712519!5e0!3m2!1sen!2sca!4v1701587379599!5m2!1sen!2sca"
-            width="600"
-            height="450"
-            style="border:0;"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        </div>
-    </section>
-    
+      <h2>Find Us</h2>
+      <p>
+        Visit us at our office for a personal consultation. We're located at
+        2300 Ryan Rd, Courtenay, BC V9N 8N6..
+      </p>
 
-        <footer>
-            <div class="footer-content">
-                <div class="footer-nav">
-                    <ul class="footer-navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Service</a></li>
-                        <li><a href="reservations.html">Reservations</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="social-media">
-                    <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                    <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-                </div>
-                <div class="footer-legal">
-                    <p> &copy; Ambassador Transportation Corp. | Phone: 250-339-5252 or Toll Free: 1-877-339-5252</p>
-                    <p>“This is a fictional website that was designed and coded as an educational exercise. It is not
-                        intended to be seen outside of the class environment. None of the content and images were approved
-                        by the business owner.”</p>
-                </div>
-            </div>
-        </footer>
-</body>
+      <!-- Embedded Google Maps iframe -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d82560.52937564178!2d-125.05365224044908!3d49.71049027341984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x548813c40dbd7447%3A0xd96b1fbbde947996!2s2300%20Ryan%20Rd%2C%20Courtenay%2C%20BC%20V9N%208N6!3m2!1d49.7105195!2d-124.9712519!5e0!3m2!1sen!2sca!4v1701587379599!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav">
+          <ul class="footer-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a href="https://facebook.com" target="_blank"
+            ><img src="images/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="https://twitter.com" target="_blank"
+            ><img src="images/twitter-icon.png" alt="Twitter"
+          /></a>
+          <a href="https://instagram.com" target="_blank"
+            ><img src="images/instagram-icon.png" alt="Instagram"
+          /></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><img src="images/linkedin-icon.png" alt="LinkedIn"
+          /></a>
+        </div>
+        <div class="footer-legal">
+          <p>
+            &copy; Ambassador Transportation Corp. | Phone: 250-339-5252 or Toll
+            Free: 1-877-339-5252
+          </p>
+          <p>
+            “This is a fictional website that was designed and coded as an
+            educational exercise. It is not intended to be seen outside of the
+            class environment. None of the content and images were approved by
+            the business owner.”
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,113 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Ambassador Transportation</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="images/Logo.png" alt="Ambassador Transportation Corp. Logo">
-            </div>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <div class="hammie">
-                <img src="images/hamburger.svg" alt="menu" onclick="showNav()">
-            </div>
+      <nav>
+        <div class="logo">
+          <img
+            src="images/Logo.png"
+            alt="Ambassador Transportation Corp. Logo"
+          />
         </div>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="hammie">
+          <img src="images/hamburger.svg" alt="menu" onclick="showNav()" />
+        </div>
+      </div>
     </header>
     <!-- script adjusted after reusing from the homepage-->
     <script>
-        function showNav() {
-            var element = document.querySelector(".navigation");
-            element.classList.toggle("show-items");
-        } 
+      function showNav() {
+        var element = document.querySelector(".navigation");
+        element.classList.toggle("show-items");
+      }
     </script>
 
     <!-- Services Section -->
     <section class="services-main1">
-        <h2>Our Premier Services</h2>
-        <div class="services-container1">
-            <div class="service-item1">
-                <img src="images/limo.png" alt="Limousine Service">
-                <h3>Limousine Services</h3>
-                <p>Indulge in luxury with our exclusive limousine services, perfect for special events and VIP transportation.</p>
-            </div>
-    
-            <div class="service-item1">
-                <img src="images/w202.jpeg" alt="Shuttle Service">
-                <h3>Shuttle Services</h3>
-                <p>Reliable and efficient shuttle services for airport transfers, corporate events, and group travels.</p>
-            </div>
-    
-            <div class="service-item1">
-                <img src="images/winey.jpg" alt="Wine Tours">
-                <h3>Wine Tours</h3>
-                <p>Experience the region's finest wineries with our exclusive wine tours. Perfect for enthusiasts and connoisseurs.</p>
-            </div>
+      <h2>Our Premier Services</h2>
+      <div class="services-container1">
+        <div class="service-item1">
+          <img src="images/limo.png" alt="Limousine Service" />
+          <h3>Limousine Services</h3>
+          <p>
+            Indulge in luxury with our exclusive limousine services, perfect for
+            special events and VIP transportation.
+          </p>
         </div>
+
+        <div class="service-item1">
+          <img src="images/w202.jpeg" alt="Shuttle Service" />
+          <h3>Shuttle Services</h3>
+          <p>
+            Reliable and efficient shuttle services for airport transfers,
+            corporate events, and group travels.
+          </p>
+        </div>
+
+        <div class="service-item1">
+          <img src="images/winey.jpg" alt="Wine Tours" />
+          <h3>Wine Tours</h3>
+          <p>
+            Experience the region's finest wineries with our exclusive wine
+            tours. Perfect for enthusiasts and connoisseurs.
+          </p>
+        </div>
+      </div>
     </section>
     <!--FAQ Section-->
     <section class="faq-main">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <h3>What areas do you service?</h3>
-                <p>We provide luxury transportation services within the Comox Valley and surrounding areas; from Black Creek to Nanaimo. Contact us for specific inquiries.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How can I book a service?</h3>
-                <p>Booking is simple and can be done through our online reservation system, by phone, or email.</p>
-            </div>
-            <div class="faq-item">
-                <h3>What payment methods are accepted?</h3>
-                <p>We accept cash, debit cards, and credit cards including Visa and Mastercard.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Do you have transportations for large groups?</h3>
-                <p>We do! We have large limos to three big buses, that would cater to your needs!</p>
-            </div>
-                </div>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>What areas do you service?</h3>
+          <p>
+            We provide luxury transportation services within the Comox Valley
+            and surrounding areas; from Black Creek to Nanaimo. Contact us for
+            specific inquiries.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How can I book a service?</h3>
+          <p>
+            Booking is simple and can be done through our online reservation
+            system, by phone, or email.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>What payment methods are accepted?</h3>
+          <p>
+            We accept cash, debit cards, and credit cards including Visa and
+            Mastercard.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you have transportations for large groups?</h3>
+          <p>
+            We do! We have large limos to three big buses, that would cater to
+            your needs!
+          </p>
+        </div>
+      </div>
     </section>
-    
 
-
-        <footer>
-            <div class="footer-content">
-                <div class="footer-nav">
-                    <ul class="footer-navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Service</a></li>
-                        <li><a href="reservations.html">Reservations</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="social-media">
-                    <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                    <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-                </div>
-                <div class="footer-legal">
-                    <p> &copy; Ambassador Transportation Corp. | Phone: 250-339-5252 or Toll Free: 1-877-339-5252</p>
-                    <p>“This is a fictional website that was designed and coded as an educational exercise. It is not
-                        intended to be seen outside of the class environment. None of the content and images were approved
-                        by the business owner.”</p>
-                </div>
-            </div>
-        </footer>
-
-</body>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav">
+          <ul class="footer-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a href="https://facebook.com" target="_blank"
+            ><img src="images/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="https://twitter.com" target="_blank"
+            ><img src="images/twitter-icon.png" alt="Twitter"
+          /></a>
+          <a href="https://instagram.com" target="_blank"
+            ><img src="images/instagram-icon.png" alt="Instagram"
+          /></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><img src="images/linkedin-icon.png" alt="LinkedIn"
+          /></a>
+        </div>
+        <div class="footer-legal">
+          <p>
+            &copy; Ambassador Transportation Corp. | Phone: 250-339-5252 or Toll
+            Free: 1-877-339-5252
+          </p>
+          <p>
+            “This is a fictional website that was designed and coded as an
+            educational exercise. It is not intended to be seen outside of the
+            class environment. None of the content and images were approved by
+            the business owner.”
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
